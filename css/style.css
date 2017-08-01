@@ -13,10 +13,12 @@ nav .brand-logo {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 
 p {
   line-height: 2rem;
+  margin-bottom: 3rem;
 }
 
 .primary-color {
@@ -62,11 +64,20 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+  .btn-height {
+    position: relative;
+    top: 200px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  .btn-height {
+    position: relative;
+    top: 280px;
   }
 }
 
@@ -81,17 +92,18 @@ footer.page-footer {
   margin: 0;
 }
 
-#image-test, #palestrantes, #local {
-  opacity: 0;
+@media only screen and (min-width : 600px) {
+  #image-test, #palestrantes, #local {
+    opacity: 0;
+  }
 }
 
 #map {
-  height: 370px;
+  height: 400px;
   width: 100%;
 }
 
 .map-descricao {
-  height: 370px;
   width: 100%;
 }
 

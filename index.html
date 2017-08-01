@@ -15,13 +15,13 @@
 </head>
 
 <body>
-  <div class="navbar-fixed hide-on-small-only">
+  <div class="navbar-fixed hide-on-med-and-down">
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
         <div class="brand-logo light">Empreendedorismo Smart</div>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#evento">Evento</a></li>
-          <li><a href="#palestrantes">Palestrantes</a></li>
+          <!-- <li><a href="#palestrantes">Palestrantes</a></li> -->
           <li><a href="#local">Local</a></li>
         </ul>
       </div>
@@ -34,28 +34,40 @@
         <a href="https://www.sympla.com.br/empreendedorismo-smart---alavancando-seu-negocio__171514" class="btn-large waves-effect waves-light grad-btn">Eu Quero Participar!</a>
       </div>
     </div>
-    <div class="parallax"><img class="responsive-img" src="img/banner.jpg" alt="Empreendedorismo Digital"></div>
+    <div class="parallax hide-on-small-only">
+      <img class="responsive-img" src="img/banner.jpg" alt="Empreendedorismo Digital ecommerce">
+    </div>
+    <div class="parallax hide-on-med-and-up">
+      <img class="responsive-img" src="img/banner-mobile.jpg" alt="Empreendedorismo Digital ecommerce">
+    </div>
   </div>
 
   <div class="container">
     <div class="section">
       <div id="evento" class="section scrollspy">
-        <h2 class="center light">Bem-vindo a transformação digital.</h2>
+        <h2 class="center light">Bem-vindo a transformação digital!</h2>
         <!--   Icon Section   -->
         <div class="row center">
           <div class="col s12">
             <div>
-              <p class="light">A era digital chegou, hoje em dia as empresas vêm ampliando seus negócios através de ferramentas digitais que
-                facilitam a vida de quem é um líder ou empreendedor. Porém ainda há a resistência de certa parte do mercado
-                em entrar nesse “mundo” digital ou desconhecimento do assunto.
-              </p>
+              <div class="row">
+                <div class="col s12 m8">
+                  <p class="light">Hoje em dia as empresas vêm ampliando seus negócios através de ferramentas digitais
+                    que facilitam a vida de quem é um líder ou empreendedor. Porém ainda há resistência de certa parte do
+                    mercado em entrar nesse “mundo” digital ou desconhecimento do assunto.
+                  </p>
+                </div>
+                <div class="col s12 m4">
+                  <img class="responsive-img top-img" src="img/market.png" alt="Empreendedorismo Digital" height="200" width="200">
+                </div>
+              </div>
               <p class="light"> O encontro a ser realizado tem o intuito de disseminar a importância de pequenas e médias empresas a passarem
                 por uma transformação digital e tomarem conhecimento do assunto, com intuito de alavancarem seus negócios
                 e facilitar a gestão de tempo e resultado dentro delas.
               </p>
-              <p class="light">Contaremos com profissionais da área em nosso evento para explicar ao público as vantagens da utilização
-                dessas ferramentas em seu negócio, transmitindo conhecimento teórico e as práticas mais usadas no mercado
-                hoje em dia.
+              <p class="light">Contaremos com profissionais da área em nosso evento para explicar ao público as vantagens da utilização dessas
+                ferramentas em seu negócio, transmitindo conhecimento teórico e as práticas mais usadas no mercado hoje em
+                dia. Participe!
               </p>
             </div>
           </div>
@@ -67,71 +79,33 @@
     </div>
   </div>
 
-  <!-- PALESTRANTES -->
   <div class="grey lighten-5">
     <div class="container">
       <div class="section">
-        <div id="palestrantes" class="section scrollspy">
-          <h2 class="center light">Palestrantes</h2>
-          <!--   Icon Section   -->
+        <div id="local" class="section scrollspy">
           <div class="row">
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <div class="center"><img src="img/e-commerce.png" alt="digital ecommerce vendas" class="circle responsive-img"></div>
-                <p class="light center">Especialista comercial da CiaShop. Ele falará um pouco sobre o mercado de e-commerce e como a TOTVS, através
-                  da Ciashop, está preparada para os desafios do mercado.</p>
-              </div>
+            <div class="col s12 m6">
+              <div id="map"></div>
             </div>
-            <!--  <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                <h5 class="center">User Experience Focused</h5>
-
-                <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates
-                  components and animations that provide more feedback to users. Additionally, a single underlying responsive
-                  system across all platforms allow for a more unified user experience.</p>
-              </div>
-            </div>
-
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Easy to work with</h5>
-
-                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started.
-                  We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="section">
-      <div id="local" class="section scrollspy">
-        <div class="row">
-          <div class="col s12 m6">
-            <div id="map"></div>
-          </div>
-          <div class="col s12 m6">
-            <div class="row center map-descricao">
-              <div class="card-panel white">
-                <div class="row">
-                  <h4 class="center light">Local</h4>
-                  <hr class="hr-class">
-                </div>
-                <div class="row">
-                  <strong>TOTVS</strong><br>Av. Braz Leme, 1000 - Santana, São Paulo - SP<br>
-                </div>
-                <div class="row">
-                  <a href="#local" onclick="initMap()"><i class="tiny material-icons indigo-text text-darken-4">event</i>Data: 02/08/2017</a>
-                </div>
-                <div class="row">
-                  <i class="tiny material-icons indigo-text text-darken-4">location_on</i>Horário: 19h às 22h
-                </div>
-                <div class="row">
-                  <a href="https://www.sympla.com.br/empreendedorismo-smart---alavancando-seu-negocio__171514" class="btn-large waves-effect waves-light grad-btn">Eu Quero Participar!</a>
+            <div class="col s12 m6">
+              <div class="row center">
+                <div class="card-panel white">
+                  <div class="row">
+                    <h4 class="center light">Local</h4>
+                    <hr class="hr-class">
+                  </div>
+                  <div class="row">
+                    <strong>TOTVS</strong><br>Av. Braz Leme, 1000 - Santana, São Paulo - SP<br>
+                  </div>
+                  <div class="row">
+                    <a href="#local" onclick="initMap()"><i class="tiny material-icons indigo-text text-darken-4">event</i>Data: 02/08/2017</a>
+                  </div>
+                  <div class="row">
+                    <i class="tiny material-icons indigo-text text-darken-4">location_on</i>Horário: 19h às 22h
+                  </div>
+                  <div class="row">
+                    <a href="https://www.sympla.com.br/empreendedorismo-smart---alavancando-seu-negocio__171514" class="btn-large waves-effect waves-light grad-btn">Eu Quero Participar!</a>
+                  </div>
                 </div>
               </div>
             </div>
