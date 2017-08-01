@@ -11,12 +11,37 @@ nav .brand-logo {
   color: #444;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 p {
   line-height: 2rem;
 }
 
+.primary-color {
+  background: rgb(96, 144, 192);
+}
+
+.secondary-color {
+  background: rgb(96, 120, 220);
+}
+
+.grad-btn {
+  background: rgb(96, 144, 192); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top left, rgb(145, 196, 192), rgb(96, 144, 192));
+  background: -moz-linear-gradient(top left, rgb(145, 196, 192), rgb(96, 144, 192));
+  background: -o-linear-gradient(top left, rgb(145, 196, 192), rgb(96, 144, 192));
+  background: linear-gradient(to bottom right, rgb(145, 196, 192), rgb(96, 144, 192));
+}
+
 .button-collapse {
   color: #26a69a;
+}
+
+.btn-height {
+  position: relative;
+  top: 280px;
 }
 
 .parallax-container {
@@ -54,4 +79,27 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+#image-test, #palestrantes, #local {
+  opacity: 0;
+}
+
+#map {
+  height: 370px;
+  width: 100%;
+}
+
+.map-descricao {
+  height: 370px;
+  width: 100%;
+}
+
+.address-padding {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.hr-class {
+  color: rgb(102, 102, 1102)
 }
